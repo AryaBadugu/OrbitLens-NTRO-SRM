@@ -10,3 +10,4 @@ numpy>=1.26.0
 pydantic>=2.5.0
 pydantic-settings>=2.0.0
 spandrel>=0.3.0
+opencv-python>=4.8.0
