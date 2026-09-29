@@ -1,6 +1,6 @@
 # OrbitLens — Tactical Satellite Super-Resolution & Spatial Uncertainty Platform
 
-> **SIH 2026 Grand Finale Submission**  
+> **SIH 2026 Submission**  
 > **Problem Statement 26142**: Deep Learning Based Super Resolution Mapping (SRM) from Medium Resolution Satellite Imageries  
 > **Organization**: National Technical Research Organisation (NTRO)  
 > **Architecture**: Swin2SR / BSRGAN 4x Spatial Transformer + Monte Carlo Dropout Uncertainty Estimation + GeoTIFF CRS Preservation + FastAPI CUDA Edge Node + React Three.js WebGL Tactical Dashboard  
