@@ -1,0 +1,29 @@
+﻿# Dependencies & Virtual Envs
+node_modules/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Local IDE / Gemini files
+.agent/
+.agents/
+.gemini/
+.gsd/
+.pytest_cache/
+gsd-template/
+adapters/
+docs/
+earth_design.txt
+section_design.txt
+model_capabilities.yaml
+outputs.zip
+GSD-STYLE.md
+PROJECT_RULES.md
+package-lock.json
+
+# Build & OS outputs
+dist/
+build/
+.DS_Store
+Thumbs.db

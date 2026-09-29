@@ -1,0 +1,77 @@
+[
+  {
+    "id": "crop_01",
+    "name": "Agricultural Belt \u2014 Crop Analysis",
+    "filename": "crop_01.jpg",
+    "category": "agricultural",
+    "region_label": "Sentinel-2 Annual Crop Patch",
+    "original_resolution": "10m/px",
+    "enhanced_resolution": "2.5m/px",
+    "dimensions": [
+      64,
+      64
+    ],
+    "use_case": "Crop pattern classification & yield estimation",
+    "source": "EuroSAT (Sentinel-2 L1C)"
+  },
+  {
+    "id": "forest_01",
+    "name": "Dense Forest Canopy \u2014 Western Ghats",
+    "filename": "forest_01.jpg",
+    "category": "environmental",
+    "region_label": "Sentinel-2 Forest Patch",
+    "original_resolution": "10m/px",
+    "enhanced_resolution": "2.5m/px",
+    "dimensions": [
+      64,
+      64
+    ],
+    "use_case": "Deforestation monitoring & NDVI analysis",
+    "source": "EuroSAT (Sentinel-2 L1C)"
+  },
+  {
+    "id": "highway_01",
+    "name": "National Highway Corridor",
+    "filename": "highway_01.jpg",
+    "category": "infrastructure",
+    "region_label": "Sentinel-2 Highway Patch",
+    "original_resolution": "10m/px",
+    "enhanced_resolution": "2.5m/px",
+    "dimensions": [
+      64,
+      64
+    ],
+    "use_case": "Convoy monitoring & infrastructure assessment",
+    "source": "EuroSAT (Sentinel-2 L1C)"
+  },
+  {
+    "id": "industrial_01",
+    "name": "Industrial Complex \u2014 Thermal Zone",
+    "filename": "industrial_01.jpg",
+    "category": "industrial",
+    "region_label": "Sentinel-2 Industrial Patch",
+    "original_resolution": "10m/px",
+    "enhanced_resolution": "2.5m/px",
+    "dimensions": [
+      64,
+      64
+    ],
+    "use_case": "Strategic reserve estimation & thermal plume detection",
+    "source": "EuroSAT (Sentinel-2 L1C)"
+  },
+  {
+    "id": "river_01",
+    "name": "Brahmaputra River Delta",
+    "filename": "river_01.jpg",
+    "category": "maritime",
+    "region_label": "Sentinel-2 River Patch",
+    "original_resolution": "10m/px",
+    "enhanced_resolution": "2.5m/px",
+    "dimensions": [
+      64,
+      64
+    ],
+    "use_case": "Flood extent mapping & river morphology tracking",
+    "source": "EuroSAT (Sentinel-2 L1C)"
+  }
+]

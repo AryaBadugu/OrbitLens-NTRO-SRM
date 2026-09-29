@@ -1,0 +1,134 @@
+{
+  "2019": {
+    "narrative": [
+      "Low prices in the prior season discouraged planting, reducing acreage.",
+      "A rainfall shortfall further cut into yields.",
+      "Combined effect: a sharp production shortfall.",
+      "Supply fell well short of demand, and prices spiked sharply."
+    ],
+    "historical_illustrative": [
+      {
+        "season": 1,
+        "price": 1200,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 2,
+        "price": 1350,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 3,
+        "price": 1550,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 4,
+        "price": 3200,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 5,
+        "price": 8500,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 6,
+        "price": 6200,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 7,
+        "price": 4100,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 8,
+        "price": 2600,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      }
+    ]
+  },
+  "2023": {
+    "narrative": [
+      "Unseasonal rains damaged standing onion crops in key growing regions.",
+      "Damaged crops led to lower-than-expected market arrivals.",
+      "Tight supply against steady demand pushed prices up sharply.",
+      "Traders and farmers responded by increasing next-season acreage intentions."
+    ],
+    "historical_illustrative": [
+      {
+        "season": 1,
+        "price": 1400,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 2,
+        "price": 1600,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 3,
+        "price": 1500,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 4,
+        "price": 2100,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 5,
+        "price": 4200,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 6,
+        "price": 5100,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 7,
+        "price": 3600,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      },
+      {
+        "season": 8,
+        "price": 2200,
+        "acreage": null,
+        "production": null,
+        "demand": null
+      }
+    ]
+  }
+}

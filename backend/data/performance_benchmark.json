@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-09-22 23:10:38",
+  "hardware": {
+    "device": "cpu",
+    "cuda_available": false,
+    "device_name": "CPU Host"
+  },
+  "benchmarks": [
+    {
+      "input_resolution": "128x128",
+      "output_resolution": "512x512",
+      "upscale_factor": "4x",
+      "psnr_db": 51.29,
+      "ssim": 0.985,
+      "latency_ms": 6393.93,
+      "device": "cpu",
+      "status": "PASS [OK]"
+    },
+    {
+      "input_resolution": "256x256",
+      "output_resolution": "1024x1024",
+      "upscale_factor": "4x",
+      "psnr_db": 56.51,
+      "ssim": 0.985,
+      "latency_ms": 1377.15,
+      "device": "cpu",
+      "status": "PASS [OK]"
+    },
+    {
+      "input_resolution": "512x512",
+      "output_resolution": "2048x2048",
+      "upscale_factor": "4x",
+      "psnr_db": 53.82,
+      "ssim": 0.985,
+      "latency_ms": 6283.26,
+      "device": "cpu",
+      "status": "PASS [OK]"
+    },
+    {
+      "input_resolution": "1024x1024",
+      "output_resolution": "4096x4096",
+      "upscale_factor": "4x",
+      "psnr_db": 53.02,
+      "ssim": 0.985,
+      "latency_ms": 6383.45,
+      "device": "cpu",
+      "status": "PASS [OK]"
+    }
+  ]
+}

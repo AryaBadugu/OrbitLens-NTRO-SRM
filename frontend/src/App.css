@@ -1,0 +1,453 @@
+/* ══════════════════════════════════════════════════════════════
+   NTRO Tactical Dashboard — App Shell Styles
+   Ascend design language adapted for SIH 2026 PS 26142
+   ══════════════════════════════════════════════════════════════ */
+
+/* ─── Top nav bar ─── */
+.ntro-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 32px;
+  height: 60px;
+  background: rgba(4,6,15,.72);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--line);
+}
+
+.ntro-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.ntro-brand-mark {
+  color: var(--accent);
+  font-size: 20px;
+  transform: translateY(-1px);
+}
+.ntro-brand-name { color: var(--ink); }
+
+.ntro-nav-center {
+  display: flex;
+  gap: 6px;
+}
+.ntro-nav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .2s, border-color .2s, background .2s;
+}
+.ntro-nav-pill:hover,
+.ntro-nav-pill.active {
+  color: var(--ink);
+  border-color: var(--line-strong);
+  background: rgba(255,255,255,.06);
+}
+
+.ntro-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ─── Status badges ─── */
+.ntro-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  background: rgba(93,240,168,.08);
+  border: 1px solid rgba(93,240,168,.22);
+  color: var(--accent);
+}
+.ntro-status-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+  animation: pulse-dot 2s infinite;
+}
+.ntro-status-badge.offline {
+  background: rgba(239,68,68,.08);
+  border-color: rgba(239,68,68,.22);
+  color: #ef4444;
+}
+.ntro-status-badge.offline .ntro-status-dot {
+  background: #ef4444;
+  box-shadow: 0 0 6px #ef4444;
+  animation: none;
+}
+@keyframes pulse-dot {
+  0%,100% { opacity: 1; }
+  50% { opacity: .35; }
+}
+
+/* ─── Main app layout (below fixed nav) ─── */
+.ntro-app {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 60px; /* nav height */
+  overflow: hidden;
+}
+
+/* ─── Hero banner (above the analysis section) ─── */
+.ntro-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(64px,10vw,120px) 24px clamp(48px,6vw,80px);
+  background: radial-gradient(125% 62% at 50% -10%, rgba(4,6,15,.92) 0%, rgba(4,6,15,.35) 44%, transparent 68%);
+}
+
+.ntro-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.ntro-hero-title {
+  font-size: clamp(34px,5.2vw,66px);
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -.03em;
+  max-width: 18ch;
+  text-shadow: 0 2px 50px rgba(0,0,0,.55);
+  margin-bottom: 22px;
+}
+.ntro-hero-title em {
+  font-style: normal;
+  background: linear-gradient(180deg,var(--accent),var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ntro-hero-sub {
+  max-width: 560px;
+  font-size: clamp(15px,1.9vw,18px);
+  line-height: 1.65;
+  color: var(--muted);
+  text-shadow: 0 1px 24px rgba(0,0,0,.55);
+}
+
+/* ─── Mission badges row ─── */
+.ntro-mission-badges {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 28px;
+}
+.ntro-mission-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  border: 1px solid var(--line-strong);
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  color: var(--muted);
+  transition: color .2s, border-color .2s;
+}
+.ntro-mission-badge:hover { color: var(--ink); border-color: var(--accent); }
+.ntro-mission-badge svg { width: 14px; height: 14px; color: var(--accent); }
+
+/* ─── Intelligence Engine section ─── */
+.ntro-intel-section {
+  flex: 1;
+  padding: 8px 20px 32px;
+}
+.ntro-intel-section-inner {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ntro-section-head {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.ntro-section-head h2 {
+  font-size: clamp(20px, 2.4vw, 30px);
+  font-weight: 800;
+  letter-spacing: -.02em;
+  text-shadow: 0 2px 40px rgba(0,0,0,.6);
+}
+.ntro-section-head p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+/* ─── Aura Build Bento Dashboard Container ─── */
+.ntro-dashboard-container {
+  height: calc(100vh - 120px);
+  max-height: calc(100vh - 120px);
+  min-height: 520px;
+  display: flex;
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  box-shadow: 0 24px 60px -15px rgba(0, 0, 0, 0.75);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+/* ─── Left Sidebar (Aura Build Bento Style: Fixed 320px) ─── */
+.ntro-aura-sidebar {
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(6, 10, 24, 0.55);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ntro-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02);
+  flex-shrink: 0;
+}
+
+.ntro-sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: var(--accent);
+}
+.ntro-sidebar-title svg { width: 14px; height: 14px; }
+
+.ntro-sidebar-badge {
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 4px;
+  padding: 1px 6px;
+  letter-spacing: .06em;
+}
+
+.ntro-sidebar-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+}
+
+.ntro-sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ntro-section-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--muted-2);
+}
+.ntro-section-label svg {
+  width: 12px;
+  height: 12px;
+  color: var(--accent);
+}
+
+.ntro-meta-compact-list {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ntro-meta-compact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 11px;
+  gap: 8px;
+}
+
+.ntro-meta-compact-key {
+  color: var(--muted-2);
+  font-size: 10px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.ntro-meta-compact-val {
+  color: var(--accent);
+  font-size: 11px;
+  text-align: right;
+  word-break: break-all;
+}
+
+/* ─── Main Stage (Aura Build Bento Stage) ─── */
+.ntro-aura-stage {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: rgba(4, 6, 15, 0.25);
+}
+
+.ntro-stage-empty {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.ntro-empty-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+.ntro-empty-icon svg { width: 24px; height: 24px; }
+.ntro-stage-empty h3 {
+  font-size: 13px;
+  letter-spacing: .08em;
+  color: var(--ink);
+}
+.ntro-stage-empty p {
+  font-size: 12px;
+  max-width: 360px;
+  line-height: 1.5;
+  color: var(--muted-2);
+}
+
+/* ─── Footer ─── */
+.ntro-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 24px 32px;
+  border-top: 1px solid var(--line);
+  background: rgba(4,6,15,.72);
+  backdrop-filter: blur(12px);
+  font-size: 12.5px;
+  color: var(--muted-2);
+}
+.ntro-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .1em;
+}
+.ntro-footer-brand-mark { color: var(--accent); font-size: 16px; }
+.ntro-footer-tagline { margin-top: 4px; font-size: 12px; color: var(--muted-2); }
+.ntro-footer-links {
+  display: flex;
+  gap: 28px;
+}
+.ntro-footer-links a {
+  color: var(--muted-2);
+  font-size: 12px;
+  transition: color .2s;
+}
+.ntro-footer-links a:hover { color: var(--ink); }
+.ntro-copyright {
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  color: var(--muted-2);
+  margin-top: 4px;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 980px) {
+  .ntro-dashboard-container {
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+  }
+  .ntro-aura-sidebar {
+    width: 100%;
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    height: auto;
+  }
+  .ntro-aura-stage {
+    height: 560px;
+  }
+}
+@media (max-width: 720px) {
+  .ntro-nav { padding: 0 18px; }
+  .ntro-nav-center { display: none; }
+}

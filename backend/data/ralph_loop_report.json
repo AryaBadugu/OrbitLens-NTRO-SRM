@@ -1,0 +1,117 @@
+{
+  "timestamp": "2026-09-22 20:34:06",
+  "total_tiles": 10,
+  "target_criteria": {
+    "min_psnr_db": 28.0,
+    "min_ssim": 0.85,
+    "max_latency_ms": 15000.0
+  },
+  "average_metrics": {
+    "psnr_db": 29.77,
+    "ssim": 0.9031,
+    "latency_ms": 1028.73
+  },
+  "all_criteria_met": true,
+  "tiles": [
+    {
+      "filename": "agricultural_01.png",
+      "psnr": 29.7,
+      "ssim": 0.8971,
+      "latency_ms": 1149.66,
+      "mean_uncertainty": 0.2617,
+      "enhanced_path": "/outputs/agricultural_01_enhanced.png",
+      "uncertainty_path": "/outputs/agricultural_01_uncertainty.png",
+      "passed": true
+    },
+    {
+      "filename": "airfield_01.png",
+      "psnr": 29.54,
+      "ssim": 0.9022,
+      "latency_ms": 525.26,
+      "mean_uncertainty": 0.2334,
+      "enhanced_path": "/outputs/airfield_01_enhanced.png",
+      "uncertainty_path": "/outputs/airfield_01_uncertainty.png",
+      "passed": true
+    },
+    {
+      "filename": "border_01.png",
+      "psnr": 29.84,
+      "ssim": 0.8959,
+      "latency_ms": 586.49,
+      "mean_uncertainty": 0.2045,
+      "enhanced_path": "/outputs/border_01_enhanced.png",
+      "uncertainty_path": "/outputs/border_01_uncertainty.png",
+      "passed": true
+    },
+    {
+      "filename": "coastal_01.png",
+      "psnr": 29.89,
+      "ssim": 0.9074,
+      "latency_ms": 724.68,
+      "mean_uncertainty": 0.2553,
+      "enhanced_path": "/outputs/coastal_01_enhanced.png",
+      "uncertainty_path": "/outputs/coastal_01_uncertainty.png",
+      "passed": true
+    },
+    {
+      "filename": "freeway_01.png",
+      "psnr": 30.16,
+      "ssim": 0.9012,
+      "latency_ms": 605.09,
+      "mean_uncertainty": 0.2549,
+      "enhanced_path": "/outputs/freeway_01_enhanced.png",
+      "uncertainty_path": "/outputs/freeway_01_uncertainty.png",
+      "passed": true
+    },
+    {
+      "filename": "harbor_01.png",
+      "psnr": 29.65,
+      "ssim": 0.9097,
+      "latency_ms": 1877.71,
+      "mean_uncertainty": 0.2457,
+      "enhanced_path": "/outputs/harbor_01_enhanced.png",
+      "uncertainty_path": "/outputs/harbor_01_uncertainty.png",
+      "passed": true
+    },
+    {
+      "filename": "power_plant_01.png",
+      "psnr": 30.18,
+      "ssim": 0.9135,
+      "latency_ms": 1064.27,
+      "mean_uncertainty": 0.2816,
+      "enhanced_path": "/outputs/power_plant_01_enhanced.png",
+      "uncertainty_path": "/outputs/power_plant_01_uncertainty.png",
+      "passed": true
+    },
+    {
+      "filename": "river_01.png",
+      "psnr": 29.57,
+      "ssim": 0.8978,
+      "latency_ms": 1643.23,
+      "mean_uncertainty": 0.2537,
+      "enhanced_path": "/outputs/river_01_enhanced.png",
+      "uncertainty_path": "/outputs/river_01_uncertainty.png",
+      "passed": true
+    },
+    {
+      "filename": "storage_tanks_01.png",
+      "psnr": 29.35,
+      "ssim": 0.8879,
+      "latency_ms": 904.69,
+      "mean_uncertainty": 0.2663,
+      "enhanced_path": "/outputs/storage_tanks_01_enhanced.png",
+      "uncertainty_path": "/outputs/storage_tanks_01_uncertainty.png",
+      "passed": true
+    },
+    {
+      "filename": "urban_01.png",
+      "psnr": 29.81,
+      "ssim": 0.9181,
+      "latency_ms": 1206.24,
+      "mean_uncertainty": 0.2647,
+      "enhanced_path": "/outputs/urban_01_enhanced.png",
+      "uncertainty_path": "/outputs/urban_01_uncertainty.png",
+      "passed": true
+    }
+  ]
+}
